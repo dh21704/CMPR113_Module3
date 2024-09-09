@@ -19,48 +19,70 @@ public class Company extends Employee{
         Manager m = new Manager();
         
         Scanner scan = new Scanner(System.in);
-       
+        
         //sout then tab
-        System.out.println("enter the address: ");
+        System.out.print("\nEnter the Address: ");
         e.Address=scan.nextLine();
         
-        System.out.println("Enter the city");
+        System.out.print("\nEnter the City: ");
         e.City = scan.nextLine();
         
-        System.out.println("Enter the State ");
+        System.out.print("\nEnter the State: ");
         e.State = scan.nextLine();
         
-        System.out.println("Enter the Zip ");
+        System.out.print("\nEnter the Zip: ");
         e.Zipcode = scan.nextLine();
         
-        System.out.println("enter the age: ");
-        e.age = scan.nextInt();
+//        System.out.print("\nEnter the Employee Name: ");
+//        e.EmployeeName=scan.nextLine();
+       
+        
+        
+        
+        
+       
+        
+//        System.out.print("\nEnter the Age: ");
+//        e.age = scan.nextInt();
         
                 //consuming
         scan.nextLine();
         
-        System.out.println("Enter the maager id: ");
-        m.ManagerID = scan.nextLine();
-        
-        System.out.println("enter the manager name");
-        m.ManagerName = scan.nextLine();
+//        System.out.print("Enter the manager id: ");
+//        m.ManagerID = scan.nextLine();
+//        
+//        System.out.print("\nEnter the manager name");
+//        m.ManagerName = scan.nextLine();
        
         
         System.out.println("\n\n");
-        System.out.println("the employee name: " + e.EmployeeName);
+        System.out.println("The Employee Name: " + e.EmployeeName);
         
-        System.out.println(" salary $" + e.salary);
+        System.out.println("Salary $" + e.salary);
         
-        System.out.println(" address: " + e.Address);
-        System.out.println("city :" + e.City);
-        System.out.println("state " + e.State);
-        System.out.println("zip " + e.Zipcode);
+        System.out.println("Bonus $" + e.bonus);
         
-        System.out.println("age: " + e.age);
+        System.out.println("The address is " + e.Address + ", " + e.City + ", " + e.State + " " + e.Zipcode);
         
-        System.out.println("the total sal $" + (e.salary+bonus));
+        System.out.println("The grand salary is $" + e.totalSalary);
         
-        System.out.println("Manager id " + m.ManagerID);
-        System.out.println("Manager Name " + m.ManagerName);
+//        System.out.println("Address: " + e.Address);
+//        System.out.println("City :" + e.City);
+//        System.out.println("State " + e.State);
+//        System.out.println("Zip " + e.Zipcode);
+//        
+//        System.out.println("Age: " + e.age);
+//        
+//        System.out.println("The Total Salary $" + (e.salary+bonus));
+//        
+//        System.out.println("Manager id " + m.ManagerID);
+//        System.out.println("Manager Name " + m.ManagerName);
     }
+//    private String Address;
+//    private String City;
+//    private String State;
+//    private String Zipcode;
+//    private int age;
+//    private String EmployeeName;
+//    private String salary = "100000";
 }
